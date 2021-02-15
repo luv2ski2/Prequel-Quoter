@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>You are a bold one</title>
+{% endblock %}
+
+{% block body %}
+    <h1 style="text-align: center">Here is your quote:</h1>
+{#    {% for quote in quotes %}#}
+{#        <h1 style="text-align: center"><i>{{ quote.content }}</i></h1>#}
+{#    {% endfor %}#}
+    <h1 style="text-align: center"><i>{{ quote.content }}</i></h1>
+    <h2 style="text-align: center"><a href="/">Return</a> </h2>
+{% endblock %}
