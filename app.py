@@ -57,9 +57,11 @@ def addQuote():
     else:
         return redirect('/')
 
+
 @app.route('/addAnotherQuote/')
 def anotherQuote():
     return render_template('addQuote.html')
+
 
 # checks your pin
 @app.route('/pinCheckPage/', methods=['GET', 'POST'])
@@ -115,5 +117,5 @@ def delete(id):
 
 
 if __name__ == '__main__':
-    #False for production
+    # False for production
     app.run(debug=False)
