@@ -68,7 +68,7 @@ def pinCheckPage():
         if request.form['content'] == pin:
             return render_template('addQuote.html')
         else:
-            return "Failure"
+            return "Ian you stinky ape man you don't have the power to add a quote :)"
     else:
         return redirect('/')
 
