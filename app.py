@@ -57,7 +57,7 @@ def addQuote():
     else:
         return redirect('/')
 
-
+# allows you to add another quote
 @app.route('/addAnotherQuote/')
 def anotherQuote():
     return render_template('addQuote.html')
